@@ -1,6 +1,10 @@
-img {
-  display: block;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 50px;
 }
