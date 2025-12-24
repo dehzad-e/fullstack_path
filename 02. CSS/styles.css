@@ -1,4 +1,4 @@
-.card {
-    border: 8px solid blue;
-    border-radius: 100px;
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
 }
