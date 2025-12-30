@@ -24,9 +24,10 @@ h3 {
     align-items: center;
     text-align: center;
     background-color: #1B244A;
-    width: 575px;
+    width: 600px;
     height: 385px;
     margin: 50px auto 0 auto;
+    border-radius: 15px;
 }
 
 .left,
@@ -53,15 +54,31 @@ h3 {
     display: flex;
     gap: 10px;
     margin-top: 25px;
-    font-size: 19px;
-    font-family: cursedtime;
-    color: #9AABD8;
+    
 }
 
-.boxes {
+button {
     width: 40px;
     height: 40px;
     border: 2px solid #9AABD8;
     border-radius: 5px;
     line-height: 40px;
+    font-size: 19px;
+    font-family: cursedtime;
+    color: #9AABD8;
+    background-color: #1B244A;
+}
+
+button:hover {
+    background-color: #2c386e;
+}
+button:active {
+    background-color: #374584;
+}
+
+#new-game, #leader {
+    margin-top: 5px;
+    width: 140px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 0;
 }
