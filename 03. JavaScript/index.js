@@ -1,5 +1,6 @@
-let person = ["Ehsan", 24, true]
+//    START           FINISH       STEP SIZE
+for ( let count = 1;  count < 11;  count += 1 )  {
+    
+    console.log(count)
 
-person.push("Lexington")
-person.pop()
-person.pop(2)
+}
