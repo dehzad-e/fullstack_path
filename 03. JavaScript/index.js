@@ -1,3 +1,5 @@
 let person = ["Ehsan", 24, true]
 
-conole.log(person[1])
+person.push("Lexington")
+person.pop()
+person.pop(2)
