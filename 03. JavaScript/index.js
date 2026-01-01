@@ -1,13 +1,9 @@
-let course = {
-    title: "Learn CSS Grid for free",
-    lessons: 16,
-    creator: "Per Harald Borgen",
-    length: 63,
-    level: 2,
-    isFree: true,
-    tags: ["html", "css"]
+let player = {
+    name: "Per",
+    chips: 200,
+    sayHello: function() {
+        console.log("Heisann!")
+    }
 }
 
-console.log( course.tags )
-console.log( course.tags )
-console.log( course["tags"] )
+player.sayHello()
