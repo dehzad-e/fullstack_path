@@ -1,10 +1,10 @@
-let hasCompletedCourse = true
-let givesCertificate = true
+let likesDocumentaries = fals
+let likesStartups = false
 
-if (hasCompletedCourse === true && givesCertificate === true) {
-    generateCertificate()
+if (likesDocumentaries === true || likesStartups === true) {
+    recommendMovie()
 }
 
-function generateCertificate() {
-    console.log("Generating certificate....")
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!")
 }
