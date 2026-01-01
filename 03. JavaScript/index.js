@@ -1,10 +1,7 @@
-let likesDocumentaries = fals
-let likesStartups = false
-
-if (likesDocumentaries === true || likesStartups === true) {
-    recommendMovie()
+let player = {
+    name: "Per",
+    chips: 145
 }
 
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you will like!")
-}
+console.log(player.name)
+console.log(player.chips)
