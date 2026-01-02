@@ -1,3 +1,94 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+    font-family: "Karla", sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Container */
+.container {
+    background-color: #1F2937;
+    max-width: 550px;
+    padding: 52px;
+}
+
+/* Typography */
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #10b981;
+}
+
+p {
+    font-size: 20px;
+    color: #c6c5c8;
+    margin: 0 0 35px 0;
+}
+
+/* Button */
+button {
+    padding: 9px 17px;
+    background-color: #10b981;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #059669;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #2f3e53;
+    margin: 35px 0;
+}
+
+/* Passwords */
+.passwords {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.password {
+    background-color: #273549;
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: #55f991;
+    font-weight: 500;
+    font-size: 16px;
+    min-width: 211px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.password:hover {
+    background-color: #2f3e53;
+}
+
