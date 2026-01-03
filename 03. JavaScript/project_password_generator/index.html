@@ -10,14 +10,15 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <mcain class="container">
+        <main class="container">
             <h1>Generate a <br><span class="highlight">random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <button id="generate-btn" type="button">Generate passwords</button>
+            
+            <button id="generate-btn" onclick="generatePassword()">Generate passwords</button>
             <hr>
             <div class="passwords">
-                <div class="password">&gt;nfJjy!dDvR&amp;ial</div>
-                <div class="password">eg&lt;xWij@veiPUwK</div>
+                <div class="password" id="password1-el"></div>
+                <div class="password" id="password2-el"></div>
             </div>
         </main>
         <script src="index.js"></script>

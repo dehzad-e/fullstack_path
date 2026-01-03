@@ -20,6 +20,7 @@ body {
     background-color: #1F2937;
     max-width: 550px;
     padding: 52px;
+    border-radius: 8px;
 }
 
 /* Typography */
@@ -51,6 +52,8 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    min-width: 211px;
+
 }
 
 button:hover {
@@ -76,6 +79,8 @@ hr {
 }
 
 .password {
+    height: 39px;
+    line-height: 1;
     background-color: #273549;
     padding: 12px 20px;
     border-radius: 6px;
