@@ -1,9 +1,10 @@
-localStorage.setItem("name", "Ehsan")
-console.log(localStorage.getItem("name"))
-localStorage.clear()
+let myLeads = `["www.awesomelead.com"]`
 
-// HINTS:
-// localStorage.setItem(key, value)
-// localStorage.getItem(key)
-// localStorage.clear()
-// PS: both key and value need to be strings
+// 1. Turn the myLeads string into an array
+myLeads = JSON.parse(myLeads)
+// 2. Push a new value to the array
+myLeads.push("www.google.com")
+// 3. Turn the array into a string again
+myLeads = JSON.stringify(myLeads)
+// 4. Console.log the string using typeof to verify that it's a string
+console.log(typeof(myLeads))
