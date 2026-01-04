@@ -18,6 +18,8 @@ button {
     padding: 10px 20px;
     border: none;
     font-weight: bold;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 ul {
