@@ -17,10 +17,20 @@ button {
     background: #5f9341;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #5f9341;
     font-weight: bold;
+    width: 50%;
     box-sizing: border-box;
-    width: 100%;
+}
+
+#buttons {
+    display: flex;
+    gap: 4px;
+}
+
+#delete-btn {
+    background: white;
+    color: #5f9341;
 }
 
 ul {
@@ -36,3 +46,5 @@ li {
 a {
     color: #5f9341;
 }
+
+
