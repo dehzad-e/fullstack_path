@@ -1,35 +1,15 @@
-const credits = 2
-
-if (credits) {
-    console.log("Let's play 🎰")
-} else {
-    console.log("Sorry, you have no credits 😭")
+//.                parameters
+function greetUser(greeting, name) { 
+    welcomeEl.textContent = `${greeting}, ${name} 👋`
 }
 
-// falsy: 
-	// false
-	// 0
-	// ""
-	// null -> how you as a developer signalize emptiness
-	// undefined -> how JavaScript signalizes emptiness
-	// NaN
-	
-//null
-let currentViewers = null
+//.        arguments
+let hi = "Howdy"
+greetUser(hi, "James")
 
-currentViewers = ["jane", "nick"]
 
-if (currentViewers) {
-    // do something , e.g. notify the live streamers
-    console.log("we have viewers")
+function add(num1, num2) {
+    return num1 + num2
 }
 
-//undefined
-let currentViewer
-console.log(currentViewers)
-
-let currentViewerss = {}
-console.log(currentViewers.randomKey)
-
-let currentViewersss = ["Ehsan"]
-console.log(currentViewers[5])
+add(3, 4)
