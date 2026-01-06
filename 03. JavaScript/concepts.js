@@ -1,21 +1,7 @@
-// Create a function that renders the three team images
-// Use a for loop, template strings (``), plus equals (+=)
-// .innerHTML to solve the challenge.
-const containerEl = document.getElementById("container")
-const imgs = [
-    "images/hip1.jpg",
-    "images/hip2.jpg",
-    "images/hip3.jpg"
-]
+// Challenge:
+// The toFixed() method doesn't work anymore. Can you make it work?
+// Google the error message if you're unsure about how to do it
 
-
-function renderIamges() {
-    for (let i = 0; i < imgs.length; i++) {
-        containerEl.innerHTML += `<img class="team-img" src="${imgs[i]}">`
-    }
-}
-
-renderIamges()
-
-
-// Refactored - minimize manipulating the DOM as much as possible
+const totalPrice = "420.69235632455"
+const btn = document.getElementById("buy-btn")
+btn.textContent = `Buy €${ Number(totalPrice).toFixed(2) }`
