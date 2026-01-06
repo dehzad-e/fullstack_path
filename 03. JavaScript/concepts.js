@@ -19,12 +19,3 @@ renderIamges()
 
 
 // Refactored - minimize manipulating the DOM as much as possible
-function renderImages() {
-    let imgsDOM = ""
-    for (let i = 0; i < imgs.length; i++) {
-        imgsDOM += `<img alt="Employee in the company" class="team-img" src="${imgs[i]}">`
-    }
-    container.innerHTML = imgsDOM
-}
-
-renderImages()
