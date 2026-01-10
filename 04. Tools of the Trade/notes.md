@@ -71,19 +71,46 @@ find .. -type f -name 'large*'
 mv [old_name] [new_name]
 ```
 
+> Same Syntax for files and directories
+
+
 ### Example
 ```bash
 mv team_members.txt team.txt
 ```
+
+
 
 ## Move
 
 ### Syntax
 ```bash
-mv [old_name] [new_name]
+mv [old_name] [new_location]
 ```
+> Same Syntax for files and directories
 
 ### Example
 ```bash
-mv team_members.txt team.txt
+mv capitals.txt geography_game/cities
 ```
+> If the new location does not exist, `mv` will rename the item instead of moving it. 
+
+## Copy
+
+### Syntax
+```bash
+cp [original_name] [copy_name]
+```
+> Same Syntax for files and directories
+
+### Example
+#### File
+```bash
+cp team.txt team_backup.txt
+```
+#### Directory
+```bash
+cp -r cities cities_backup
+```
+
+> Recursive copying, using the `-r` option, means that every item at any level inside the directory is copied individually.
