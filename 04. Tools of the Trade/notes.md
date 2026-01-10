@@ -24,3 +24,28 @@
 find [path] [option] [expression]
 find . -name 'forest*'
 ```
+### Find Options
+#### Search by name
+```bash
+-name 'forest*'
+```
+
+#### Case insecsitive search by name
+```bash
+-iname 'forest*'
+```
+
+#### Search by type
+```bash
+-type f / -type d
+```
+
+#### Combine Options
+```bash
+-type d -iname 'forest*'
+```
+
+#### Example
+```bash
+find .. -type f -name 'large*'
+```
