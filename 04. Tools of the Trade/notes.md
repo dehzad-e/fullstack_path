@@ -179,3 +179,8 @@ sort team_members.txt | uniq > sorted_team.txt
 4. **Rename, move & copy:** `mv`, `cp`
 5. **Count & sort:** `wc`, `sort`, `uniq`
 6. **Wildcard, pipe & redirection:** `*`, `|`, `>`
+  
+<br>
+<br>
+
+# Git and GitHub
