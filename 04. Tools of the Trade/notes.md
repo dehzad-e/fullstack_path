@@ -114,3 +114,37 @@ cp -r cities cities_backup
 ```
 
 > Recursive copying, using the `-r` option, means that every item at any level inside the directory is copied individually.
+
+## Search in Files
+### Syntax
+```bash
+grep [pattern] [file(s)]
+```
+
+### Example
+```bash
+grep 'CEO' team.txt
+```
+Ouput: `AB, CEO and creative Genius`
+
+## Search Options
+### Syntax
+```bash
+grep [option] [pattern] [file(s)]
+```
+
+### Example
+```bash
+grep -n ',' team*
+```
+Ouput:  
+`team.txt: 1: AB, CEO and creative genius`  
+`team.txt: 1: NN, hard-working intern`
+
+### Usefull Options
+- show line numbers: `-n`
+- Case insensitive: `-i`
+- Search recursively: `-r`
+    - `grep -r ',' .`
+    - Every line containing a comma, in every file that lives in the current directroy or subdirectory at any depth.
+
