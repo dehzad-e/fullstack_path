@@ -19,3 +19,8 @@
 | `echo $0` | Print the shell you are using |
 
 ## Finding Files and Directories
+### Syntax
+```bash
+find [path] [option] [expression]
+find . -name 'forest*'
+```
