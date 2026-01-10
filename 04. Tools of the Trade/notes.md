@@ -1,4 +1,5 @@
 # Command Line Interface
+
 | Command | Description |
 |--------|-------------|
 | `pwd` | Print current directory |
@@ -19,12 +20,15 @@
 | `echo $0` | Print the shell you are using |
 
 ## Finding Files and Directories
+
 ### Syntax
 ```bash
 find [path] [option] [expression]
 find . -name 'forest*'
 ```
+
 ### Find Options
+
 #### Search by name
 ```bash
 -name 'forest*'
@@ -57,3 +61,29 @@ find .. -type f -name 'large*'
 - Parent Directory: `..`
 - Home Directory: `~`
 - Root Directory: `/`
+
+## Rename, Move, and Copy
+
+## Remame
+
+### Syntax
+```bash
+mv [old_name] [new_name]
+```
+
+### Example
+```bash
+mv team_members.txt team.txt
+```
+
+## Move
+
+### Syntax
+```bash
+mv [old_name] [new_name]
+```
+
+### Example
+```bash
+mv team_members.txt team.txt
+```
