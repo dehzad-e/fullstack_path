@@ -184,3 +184,46 @@ sort team_members.txt | uniq > sorted_team.txt
 <br>
 
 # Git and GitHub
+## The Workflow
+
+1. Create an issue on GitHub
+2. Make sure you are on `main` and up to date
+
+    ```bash
+    git checkout main
+    git pull
+    ```
+
+3. Create and switch to a new feature branch
+
+    ```bash
+    git checkout -b FP-1-change-font
+    ```
+
+4. Make the necessary changes
+5. Stage and commit your changes
+
+    ```bash
+    git add .
+    git commit -m "Change font styles"
+    ```
+
+6. Push the feature branch to GitHub
+
+    ```bash
+    git push -u origin FP-1-change-font
+    ```
+
+7. Create a pull request (PR) on GitHub
+8. Review and merge the PR
+9. Delete the feature branch
+
+    **Local:**
+    ```bash
+    git branch -d FP-1-change-font
+    ```
+
+    **Remote (optional but recommended):**
+    ```bash
+    git push origin --delete FP-1-change-font
+    ```
