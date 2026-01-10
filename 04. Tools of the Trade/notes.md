@@ -17,3 +17,5 @@
 | `cat` | Print file contents |
 | `cat hello.txt > hello_copy.txt` | Copy contents of `hello.txt` into `hello_copy.txt` (creates it if it doesn’t exist) |
 | `echo $0` | Print the shell you are using |
+
+## Finding Files and Directories
