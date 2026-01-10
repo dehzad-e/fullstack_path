@@ -137,14 +137,45 @@ grep [option] [pattern] [file(s)]
 ```bash
 grep -n ',' team*
 ```
-Ouput:  
+Output:  
 `team.txt: 1: AB, CEO and creative genius`  
 `team.txt: 1: NN, hard-working intern`
 
-### Usefull Options
+### Useful Options
 - show line numbers: `-n`
 - Case insensitive: `-i`
 - Search recursively: `-r`
     - `grep -r ',' .`
     - Every line containing a comma, in every file that lives in the current directroy or subdirectory at any depth.
 
+## Combining Commands
+> We use the pipe charactor (|)
+### Syntax
+```bash
+[cmd] | [cmd]
+```
+> It gets the output of command 1 and turns it into an input for command 2.
+
+### Example
+```bash
+sort team_members.txt | uniq
+```
+```bash
+sort team_members.txt | uniq > sorted_team.txt
+```
+
+## Other Actions
+- Replace content in files
+- Count values in files
+- Sort content of files
+- Remove duplicates
+
+
+## Recap
+
+1. **Terminology & local setup**
+2. **Options:** `-r`, `-n`, `-g`, `-i`, `-l`
+3. **Find, search & replace:** `find`, `grep`, `sed`
+4. **Rename, move & copy:** `mv`, `cp`
+5. **Count & sort:** `wc`, `sort`, `uniq`
+6. **Wildcard, pipe & redirection:** `*`, `|`, `>`
