@@ -49,3 +49,11 @@ find . -name 'forest*'
 ```bash
 find .. -type f -name 'large*'
 ```
+
+### Paths
+- Relative Path: `../forstes`
+- Absolute Path: `/Users/edehzad/Desktop/SelfLearning/Scrimba/fullstack_path/04. Tools of the Trade`
+- Current Directory: `.`
+- Parent Directory: `..`
+- Home Directory: `~`
+- Root Directory: `/`
