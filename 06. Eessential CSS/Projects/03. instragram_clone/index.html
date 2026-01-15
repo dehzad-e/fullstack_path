@@ -1,9 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Instagram Clone - A social media post showcase">
+        <title>Instagram Clone</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <img src="images/logo.png">
+        <main class="container">
+            <header class="app-header">
+                <img src="images/logo.png" alt="Instagram logo" class="logo">
+                <img class="avatar" src="images/user-avatar.png" alt="User profile">
+            </header>
+
+            <article class="post">
+                <section class="post-author">
+                    <img class="avatar" src="images/avatar-vangogh.jpg" alt="Vincent van Gogh profile picture">
+                    <div class="author-info">
+                        <p class="author-name">Vincent van Gogh</p>
+                        <p class="author-location">Zudert, Netherlands</p>
+                    </div>
+                </section>
+                
+                <section class="post-image">
+                    <img src="images/post-vangogh.jpg" alt="Van Gogh's artwork post">
+                </section>
+                
+                <section class="post-details">
+                    <div class="post-actions">
+                        <button class="action-btn" aria-label="Like post">
+                            <img src="images/icon-heart.png" alt="">
+                        </button>
+                        <button class="action-btn" aria-label="Comment on post">
+                            <img src="images/icon-comment.png" alt="">
+                        </button>
+                        <button class="action-btn" aria-label="Send direct message">
+                            <img src="images/icon-dm.png" alt="">
+                        </button>
+                    </div>
+                    <p class="likes-count">21,492 likes</p>
+                    <p class="post-caption">
+                        <span class="username">vincy1853</span> 
+                        <span class="caption-text">just took a few mushrooms lol</span>
+                    </p>
+                </section>
+            </article>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
