@@ -34,7 +34,7 @@ let postsHTML = ""
 
 for (let i = 0; i < posts.length; i++) {
     postsHTML += `
-        <article class="post container">
+        <article class="post">
             <section class="post-author">
                 <img class="avatar" src="${posts[i].avatar}" alt="${posts[i].name} profile picture">
                 <div class="author-info">

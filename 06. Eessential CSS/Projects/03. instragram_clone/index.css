@@ -38,9 +38,8 @@ body {
 .container {
     width: 100%;
     max-width: var(--container-max-width);
-    margin: var(--spacing-lg) auto;
+    margin: 25px auto 0px auto;
     background-color: var(--card-bg);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -72,7 +71,7 @@ body {
 
 /* Post Article */
 .post {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 25px solid var(--primary-bg);
 
 }
 
