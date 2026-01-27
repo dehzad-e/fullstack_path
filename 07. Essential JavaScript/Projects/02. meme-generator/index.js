@@ -15,9 +15,8 @@ Challenge:
    Extra kudos if you use the "logical not"
    operator - feel free to google it!
 */
-            if (!emotionsArray.includes(emotion)) {
-                emotionsArray.push(emotion)
-            }
+            
+            !emotionsArray.includes(emotion) && emotionsArray.push(emotion)
         }
     }
     return emotionsArray
