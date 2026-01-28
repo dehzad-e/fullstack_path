@@ -1,34 +1,40 @@
-const characters = [
+const container = document.getElementById('container')
+
+const products = [
     {
-        title: 'Ninja',
-        emoji: '🥷',
-        powers: ['agility', 'stealth', 'aggression'],
+        name: 'Ostrich Pillow',
+        price: '10',
+        image: 'ostrichpillow.jpg',
+        id: 'ostrich-pillow'
     },
     {
-        title: 'Sorcerer',
-        emoji: '🧙',
-        powers: ['magic', 'invisibility', 'necromancy'],
+        name: 'Bacon Bandages',
+        price: '8',
+        image: 'bacon-bandage.jpg',
+        id: 'bacon-bandages'
     },
     {
-        title: 'Ogre',
-        emoji: '👹',
-        powers: ['power', 'stamina', 'shapeshifting'],
-    },
-    {
-        title: 'Unicorn',
-        emoji: '🦄',
-        powers: [ 'flight', 'power', 'purity'],
+        name: 'Baby Mop',
+        price: '20',
+        image: 'babymop.jpg',
+        id: 'baby-mop'
     }
 ]
 
-for (let character of characters){
-    for (let power of character.powers){
-        console.log(power)
-    }
-/*
-Challenge:
-1. Nest a for of inside this for of to iterate over 
-   the powers array for each character. Log out each 
-   power.
-*/
+let productsHtml = ``
+
+for (let product of products){
+    productsHtml += `
+    <div class="product">
+        <h3>${product.name}</h3>
+         <h4> £${product.price}</h4>
+        <img src="${product.image}">
+        <button id="${product.id}">Buy Now</button>
+    </div>
+    `
 }
+container.innerHTML = productsHtml
+
+container.addEventListener('click', function(e){
+    console.log(e.target.id)
+})

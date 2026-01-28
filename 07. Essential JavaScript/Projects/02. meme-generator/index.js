@@ -41,5 +41,4 @@ function renderEmotionsRadios(cats){
     }
     emotionRadios.innerHTML = radioItems
 }
-
 renderEmotionsRadios(catsData)
