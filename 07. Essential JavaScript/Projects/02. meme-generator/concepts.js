@@ -37,4 +37,4 @@ container.innerHTML = productsHtml
 
 container.addEventListener('click', function(e){
     console.log(e.target.id)
-})
+}) 
